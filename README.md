@@ -21,12 +21,12 @@ $ git clone https://github.com/gariasf/VagrantMachine.git
 $ cd VagrantMachine
 ```
 
-Run the vagran up command
+Run the vagrant up command
 ```
 $ vagrant up
 ```
 
-That should build and run the machine. The first time takes a while, so sit back and relax. Brew some coffe if you prefer.
+That should build and run the machine. The first time takes a while, so sit back and relax. Brew some tea if you prefer.
 
 If you're not into cloning repos, you can just create the VAGRANTFILE and bootsrtap.sh files yourself and then fill the contents based on the ones here online.
 
