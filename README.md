@@ -21,6 +21,8 @@ $ git clone https://github.com/gariasf/VagrantMachine.git
 $ cd VagrantMachine
 ```
 
+If you're not into cloning repos, you can just create the VAGRANTFILE and bootsrtap.sh files yourself and then fill the contents based on the ones here online.
+
 Run the vagrant up command
 ```
 $ vagrant up
@@ -28,7 +30,17 @@ $ vagrant up
 
 That should build and run the machine. The first time takes a while, so sit back and relax. Brew some tea if you prefer.
 
-If you're not into cloning repos, you can just create the VAGRANTFILE and bootsrtap.sh files yourself and then fill the contents based on the ones here online.
+If the first run doesn't boot up and gets frozen at `Loading extension GLX`, close the machine (from VirtualBox works) and open it up agran. You don't need to run vagrant up again.
+
+Default username/password is `vagrant/vagrant`
+
 
 ## Getting the machine from vagrant cloud
-__TBI__
+You can also use this machine by fetching it from the vagrant cloud like so:
+
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "gariasf/UbNETvDo"
+  config.vm.box_version = "0.1.0"
+end
+```
